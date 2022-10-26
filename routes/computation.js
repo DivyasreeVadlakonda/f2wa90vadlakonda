@@ -7,9 +7,10 @@ router.get('/', function(req, res, next) {
     var variable2 = Math.fround(variable1);
     var variable3 = Math.random(variable1);
     var variable4 = Math.round(variable1);
-  res.render('computation', { title: 'Math.fround() applied to ' + variable1 + 'is' + variable2 },
-  { title1: 'Math.random() applied to ' + variable1 + 'is' + variable3 },
-  { title2: 'Math.round() applied to ' + variable1 + 'is' + variable4 })
+  res.render('computation', { title: 'Math.fround() applied to ' + variable1 + 'is' + variable2 ,
+   title2: 'Math.random() applied to ' + variable1 + 'is' + variable3,  
+   title3: 'Math.round() applied to ' + variable1 + 'is' + variable4
+});
 });
 
 module.exports = router;
